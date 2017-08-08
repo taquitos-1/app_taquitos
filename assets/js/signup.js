@@ -1,12 +1,19 @@
+(function(argument) {
+	
+	var cargarPagina = function () {
+	$('.numeroAleatorio').keydown(validarNumero);
+	var obtenerPerfil = localStorage.getItem('nombre');
+	console.log(obtenerPerfil);
+	var obtenerEmail = localStorage.getItem('correoUsuario');
+	console.log(obtenerEmail);
+	}
 
-$('#boton').click(direccionar);
+	var validarNumero = function() {
+		alert('validar');
+	}
 
-function direccionar(e){
-    e.preventDefault();
-    location.href = './restaurantes.html';
-    
-    
-}
 
+	$(document).ready(cargarPagina);
+})();
 
 

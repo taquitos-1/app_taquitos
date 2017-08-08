@@ -31,6 +31,7 @@
 		  var email = error.email;
 		  var credential = error.credential;
 		});
+		location.href = "./signup.html"
 	}
 
 	var loginFacebook = function() {
