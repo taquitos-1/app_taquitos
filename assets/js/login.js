@@ -12,7 +12,7 @@
 
 	var cargarPagina = function() {
 		$("#boton-facebook").click(loginFacebook);
-		$(".btn-goo").click(go);
+		$("#boton-google").click(loginGoogle);
 	}
 
 	var login = function(provider) {
@@ -21,7 +21,8 @@
 		  var user = result.user;
 		  var nombreUsuario = user.displayName;
 		  localStorage.setItem('nombre', nombreUsuario);
-		  var correo = user.email;
+          var correo = user.email;
+          console.log(user)  
 		  console.log(nombreUsuario , correo);
 		  localStorage.setItem('correoUsuario', correo);
 		}).catch(function(error) {
@@ -34,12 +35,15 @@
 
 	var loginFacebook = function() {
 		var provider = new firebase.auth.FacebookAuthProvider();
-		login(provider);
-	}
-	function go(){
-	    location.href = "signup.html"
-	}
-		
+        login(provider);
+        location.href = "./signup.html"
+    }
+    
+    var loginGoogle = function() {
+		var provider = new firebase.auth.GoogleAuthProvider();
+        login(provider);
+        location.href = "./signup.html"
+    }	
 	
 	$(document).ready(cargarPagina);
 })();
