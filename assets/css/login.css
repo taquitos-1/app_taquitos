@@ -1,0 +1,20 @@
+body{
+    background-color: orange;
+}
+
+.logo{
+    color: white;
+}
+
+.contenedor-logo{
+    top: 30vh;
+    text-align: center;
+}
+
+.btn-fb{
+    margin-top: 50px;
+}
+
+.btn-goo{
+    margin-top: 25px;
+}
