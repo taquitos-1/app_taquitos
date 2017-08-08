@@ -16,12 +16,10 @@ var plantilla = '<div class="panel panel-default">' +
 	'<div>__DESCRIPCION__RESTAURANTE__</div>' +
 	'</div>' +
 	'<div class="row">' +
-
 	'<div class="col-md-6 col-xs-6">' +
-
 	'<span class="glyphicon glyphicon-star" aria-hidden="true"></span>' +
 	'<span>_NE_</span>' +
-	'	</div>' +
+	'</div>' +
 	'<div class="col-md-6 col-xs-4">' +
 	'<div>a __N__ km.</div>' +
 	'</div>' +
