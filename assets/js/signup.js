@@ -1,3 +1,12 @@
+(function(argument) {
+	
+	var cargarPagina = function () {
+	$('.numeroAleatorio').keydown(validarNumero);
+	var obtenerPerfil = localStorage.getItem('nombre');
+	console.log(obtenerPerfil);
+	var obtenerEmail = localStorage.getItem('correoUsuario');
+	console.log(obtenerEmail);
+	}
 
 let cargarPagina = () => {
     $("#email").change(validarEmail);
@@ -34,4 +43,5 @@ function direccionar(e){
 }
 
 
-$(document).ready(cargarPagina);
+	$(document).ready(cargarPagina);
+})();
