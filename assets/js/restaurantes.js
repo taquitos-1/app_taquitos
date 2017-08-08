@@ -2,7 +2,9 @@ var xhr = new XMLHttpRequest();
 
 
 
-var plantilla = '<div class="panel panel-default">' +
+var plantilla = 
+	'<div onclick="cambioDePantalla()">'+
+	'<div class="panel panel-default">' +
 	'<div class="panel-body">' +
 	'<div class="row">' +
 	'<div class="col-md-4 col-xs-4">' +
@@ -22,6 +24,7 @@ var plantilla = '<div class="panel panel-default">' +
 	'</div>' +
 	'<div class="col-md-6 col-xs-4">' +
 	'<div>a __N__ km.</div>' +
+	'</div>' +
 	'</div>' +
 	'</div>' +
 	'</div>' +
