@@ -1,18 +1,12 @@
-let $name= $("#nombre").val(); 
 
+$('#boton').click(direccionar);
 
-let cargarPagina = ()=>{
-
-    botonOnClick;
-
-  
+function direccionar(e){
+    e.preventDefault();
+    location.href = './restaurantes.html';
+    
+    
 }
-
-let botonOnClick(e) => {
-    e.preventDefault()
-}
-
-$(document).ready(cargarPagina);
 
 
 
