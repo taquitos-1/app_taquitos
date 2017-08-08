@@ -8,3 +8,10 @@ var config = {
 };
 
 firebase.initializeApp(config);
+
+$(".btn-fb").click(go)
+$(".btn-goo").click(go)
+
+function go(){
+    location.href = "signup.html"
+}
